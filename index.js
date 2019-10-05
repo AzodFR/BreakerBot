@@ -7,8 +7,14 @@ bot.on('ready', function(){
 })
 
 bot.on('message', function(message){
-    console.log(message.channel.id);
-    if (message.channel.id === "613684354421620766"){
+    msg = message.content
+    if (message.channel.id === "619577505606664193"){
+        if (msg.includes('AzodFR')){
+            console.log(msg);
+        }
+        
+        }
+    else if (message.channel.id === "613684354421620766"){
         message.react("👎");
         message.react("👍");
         
