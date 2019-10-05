@@ -17,7 +17,7 @@ bot.on('message', function(message){
          /// console.log(nmss[1]); 
           list.members.forEach(member => {
               mbm = nmss[1]
-              if(member.user.username === nmss[1]){
+              if(member.user.nickname === nmss[1]){
                  
                  if (nmss[0] === "[A]"){
                      if (member.roles.find(x => x.name === 'Aventurier')){
