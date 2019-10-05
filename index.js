@@ -8,7 +8,7 @@ bot.on('ready', function(){
 
 bot.on('message', function(message){
         
-    else if (message.channel.id === "613684354421620766"){
+    if (message.channel.id === "613684354421620766"){
         message.react("👎");
         message.react("👍");
         
