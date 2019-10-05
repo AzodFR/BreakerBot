@@ -8,7 +8,7 @@ bot.on('ready', function(){
 
 bot.on('message', function(message){
     msg = message.embeds
-    msgf = msg.MessageEmbedAuthor
+    msgf = msg.attachments
     if (message.channel.id === "619577505606664193"){
         
          console.log(msgf);
