@@ -19,19 +19,19 @@ bot.on('message', function(message){
               mbm = nmss[1]
               if(member.user.username === nmss[1]){
                  if (nmss[0] === "[A]"){
-                     mbm.addRole('619570647936401413');
+                     member.user.addRole('619570647936401413');
                      console.log(nmss[1] +" est passé Aventurier sur discord");
                  }
                  else if (nmss[0] === "[S]"){
-                     mbm.addRole('619561591230300181');
+                     member.user.addRole('619561591230300181');
                      console.log(nmss[1] +" est passé Survivant sur discord");
                  }
                  else if (nmss[0] === "[C]"){
-                     mbm.addRole('619681329881022485');
+                     member.user.addRole('619681329881022485');
                      console.log(nmss[1] +" est passé Chevalier sur discord");
                  }
                  else if (nmss[0] === "[D]"){
-                     mbm.addRole('619681398126542868');
+                     member.user.addRole('619681398126542868');
                      console.log(nmss[1] +" est passé Duc sur discord");
                  }
               
