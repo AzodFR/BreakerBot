@@ -15,7 +15,12 @@ bot.on('message', function(message){
           nmss = nms.split(" ");
           console.log(nmss[0]); 
           console.log(nmss[1]); 
-          console.log(list.members);
+          list.members.forEach(member => if(member.user.username === nmss[1]){
+            console.log("OK! "+nmss[1]);
+            
+            }
+             
+             ); 
           
              
              
