@@ -7,7 +7,7 @@ bot.on('ready', function(){
 })
 
 bot.on('message', function(message){
-    const list = client.guilds.get("596754524392259584"); 
+    const list = bot.guilds.get("596754524392259584"); 
     if (message.channel.id === "619577505606664193"){
         
          message.embeds.forEach((embed) => {
