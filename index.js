@@ -8,10 +8,11 @@ bot.on('ready', function(){
 
 bot.on('message', function(message){
     msg = message.embeds
-    msgf = msg.attachments
+    var msgn = msg.split("name: '");
+    var msgnn = msgn.split("'");
     if (message.channel.id === "619577505606664193"){
         
-         console.log(msgf);
+         console.log(msgnn[0]);
     
 
         }   
