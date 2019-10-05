@@ -13,12 +13,27 @@ bot.on('message', function(message){
          message.embeds.forEach((embed) => {
           nms = embed.author.name
           nmss = nms.split(" ");
-          console.log(nmss[0]); 
-          console.log(nmss[1]); 
+         /// console.log(nmss[0]); 
+         /// console.log(nmss[1]); 
           list.members.forEach(member => {
               if(member.user.username === nmss[1]){
-            console.log("OK! "+nmss[1]);
-            
+                 if (nmss[0] === "[A]"){
+                     nmss[1].addRole("Aventurier");
+                     console.log(nmss[1] +" est passé Aventurier sur discord");
+                 }
+                 else if (nmss[0] === "[S]"){
+                     nmss[1].addRole("Survivant");
+                     console.log(nmss[1] +" est passé Survivant sur discord");
+                 }
+                 else if (nmss[0] === "[C]"){
+                     nmss[1].addRole("Chevalier");
+                     console.log(nmss[1] +" est passé Chevalier sur discord");
+                 }
+                 else if (nmss[0] === "[D]"){
+                     nmss[1].addRole("Duc");
+                     console.log(nmss[1] +" est passé Duc sur discord");
+                 }
+              
             }
              
           }); 
