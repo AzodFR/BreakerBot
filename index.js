@@ -20,41 +20,41 @@ bot.on('message', function(message){
               if(member.user.username === nmss[1]){
                  
                  if (nmss[0] === "[A]"){
-                     if (member.roles.find('name', 'Aventurier')){
+                     if (member.roles.find(x => x.name === 'Aventurier')){
                          console.log(nmss[1] +" est déjà Aventurier sur discord");
                      }
                      else{
-                         let role = message.guild.roles.find('name', 'Aventurier')
+                         let role = message.guild.roles.find(x => x.name === 'Aventurier')
                          member.addRole(role);
                          console.log(nmss[1] +" est passé Aventurier sur discord");
                      }
                  }
                  else if (nmss[0] === "[S]"){
-                       if (member.roles.find('name', 'Survivant')){
+                       if (member.roles.find(x => x.name === 'Survivant')){
                          console.log(nmss[1] +" est déjà Survivant sur discord");
                      }
                      else{
-                         let role = message.guild.roles.find('name', 'Survivant')
+                         let role = message.guild.roles.find(x => x.name === 'Survivant')
                          member.addRole(role);
                          console.log(nmss[1] +" est passé Survivant sur discord");
                      }
                  }
                  else if (nmss[0] === "[C]"){
-                       if (member.roles.find('name', 'Chevalier')){
+                       if (member.roles.find(x => x.name === 'Chevalier')){
                          console.log(nmss[1] +" est déjà Chevalier sur discord");
                      }
                      else{
-                         let role = message.guild.roles.find('name', 'Chevalier')
+                         let role = message.guild.roles.find(x => x.name === 'Chevalier')
                          member.addRole(role);
                          console.log(nmss[1] +" est passé Chevalier sur discord");
                      }
                  }
                  else if (nmss[0] === "[D]"){
-                       if (member.roles.find('name', 'Duc')){
+                       if (member.roles.find(x => x.name === 'Duc')){
                          console.log(nmss[1] +" est déjà Duc sur discord");
                      }
                      else{
-                         let role = message.guild.roles.find('name', 'Duc')
+                         let role = message.guild.roles.find(x => x.name === 'Duc')
                          member.addRole(role);
                          console.log(nmss[1] +" est passé Duc sur discord");
                      }
