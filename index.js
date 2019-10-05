@@ -7,7 +7,7 @@ bot.on('ready', function(){
 })
 
 bot.on('message', function(message){
-    msg = message.author
+    msg = message.author.messages
     if (message.channel.id === "619577505606664193"){
         
          console.log(msg);
