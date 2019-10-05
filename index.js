@@ -13,15 +13,3 @@ bot.on('message', function(message){
         message.react("👎")
     
     }
-    
-
-
-
-
-}
-
-
-
-
-
-
