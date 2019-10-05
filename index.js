@@ -15,7 +15,8 @@ bot.on('message', function(message){
           nmss = nms.split(" ");
           console.log(nmss[0]); 
           console.log(nmss[1]); 
-          list.members.forEach(member => console.log(member.user.username)); 
+          console.log(list.members);
+          
              
              
     });
