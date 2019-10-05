@@ -4,7 +4,7 @@ const bot = new Discord.Client()
 bot.login(process.env.BOT_TOKEN)
 bot.on('ready', function(){
     bot.user.setActivity('BreakerLand !')
-    console.log('Connected')
+    console.log('Connected');
 })
 
 
