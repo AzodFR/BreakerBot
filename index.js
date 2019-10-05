@@ -7,7 +7,7 @@ bot.on('ready', function(){
 })
 
 bot.on('message', function(message){
-    
+    const list = client.guilds.get("596754524392259584"); 
     if (message.channel.id === "619577505606664193"){
         
          message.embeds.forEach((embed) => {
@@ -15,6 +15,9 @@ bot.on('message', function(message){
           nmss = nms.split(" ");
           console.log(nmss[0]); 
           console.log(nmss[1]); 
+          list.members.forEach(member => console.log(member.user.username)); 
+             
+             
     });
         
     
