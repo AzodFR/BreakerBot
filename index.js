@@ -7,7 +7,7 @@ bot.on('ready', function(){
 })
 
 bot.on('message', function(message){
-    msg = message.embed.title
+    msg = message.embeds.title
     if (message.channel.id === 619577505606664193){
             console.log(msg);
 
