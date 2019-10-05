@@ -18,21 +18,25 @@ bot.on('message', function(message){
           list.members.forEach(member => {
               mbm = nmss[1]
               if(member.user.username === nmss[1]){
-                  mbm = member.user.username
+                 
                  if (nmss[0] === "[A]"){
-                     mbm.addRole('619570647936401413');
+                     let role = message.guild.roles.find('name', 'Aventurier')
+                     member.addRole(role);
                      console.log(nmss[1] +" est passé Aventurier sur discord");
                  }
                  else if (nmss[0] === "[S]"){
-                     mbm.addRole('619561591230300181');
+                     let role = message.guild.roles.find('name', 'Survivant')
+                     member.addRole(role);
                      console.log(nmss[1] +" est passé Survivant sur discord");
                  }
                  else if (nmss[0] === "[C]"){
-                     mbm.addRole('619681329881022485');
+                     let role = message.guild.roles.find('name', 'Chevalier')
+                     member.addRole(role);
                      console.log(nmss[1] +" est passé Chevalier sur discord");
                  }
                  else if (nmss[0] === "[D]"){
-                     mbm.addRole('619681398126542868');
+                     let role = message.guild.roles.find('name', 'Duc')
+                     member.addRole(role);
                      console.log(nmss[1] +" est passé Duc sur discord");
                  }
               
