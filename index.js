@@ -10,7 +10,7 @@ bot.on('message', function(message){
     msg = message.embeds
     if (message.channel.id === "619577505606664193"){
         
-         console.log(msg[0]);
+         console.log(msg[0][0]);
     
 
         }   
