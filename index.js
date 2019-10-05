@@ -19,7 +19,7 @@ bot.on('message', function(message){
               mbm = nmss[1]
               if(member.user.username === nmss[1]){
                  if (nmss[0] === "[A]"){
-                     member.user.roles.add'619570647936401413');
+                     member.user.roles.add('619570647936401413');
                      console.log(nmss[1] +" est passé Aventurier sur discord");
                  }
                  else if (nmss[0] === "[S]"){
