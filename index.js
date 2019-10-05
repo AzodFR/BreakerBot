@@ -7,17 +7,19 @@ bot.on('ready', function(){
 })
 
 bot.on('message', function(message){
-    msg = message.content
-    if (message.channel.id === "619577505606664193"){
-       
-        console.log(message.type);
-        }
-        
         
     else if (message.channel.id === "613684354421620766"){
         message.react("👎");
         message.react("👍");
         
+        }
+        })
+bot.on('messageembed', function(messageembed){
+    msg = messageembed.message
+    if (message.channel.id === 619577505606664193){
+            console.log(msg);
+        
+
         }
         })
 
