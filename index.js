@@ -11,7 +11,10 @@ bot.on('message', function(message){
     if (message.channel.id === "619577505606664193"){
         
          message.embeds.forEach((embed) => {
-          console.log(embed.author.name); 
+          nms = embed.author.name
+          nmss = nms.split(" ");
+          console.log(nmss[0]); 
+          console.log(nmss[1]); 
     });
         
     
