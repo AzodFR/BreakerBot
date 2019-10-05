@@ -7,12 +7,6 @@ bot.on('ready', function(){
     console.log('Connected')
 })
 
-bot.on('message', function(message){
-    if (message.channel.id === 613684354421620766){
-        message.react("👍")
-        message.react("👎")
-        }
-        })
-    
+
    
 
