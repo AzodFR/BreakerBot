@@ -9,7 +9,7 @@ bot.on('ready', function(){
 bot.on('message', function(message){
     msg = message.embeds
     if (message.channel.id === "619577505606664193"){
-        if (msg.includes("AzodFR"){
+        if (msg.includes("AzodFR")){
             console.log(msg);
     }
 
