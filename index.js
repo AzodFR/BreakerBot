@@ -18,11 +18,11 @@ bot.on('message', function(message){
           mbma = nmss[1]
           if(nmss[1].includes("[")){
                     
-                   let mbma = nmss[2]   
+                    mbma = nmss[2]   
               }
               
               else{
-               let mbma = nmss[1]   
+                mbma = nmss[1]   
               }
               
           list.members.forEach(member => {
