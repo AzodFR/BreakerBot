@@ -17,7 +17,14 @@ bot.on('message', function(message){
          /// console.log(nmss[1]); 
           list.members.forEach(member => {
               mbm = nmss[1]
-              if(member.displayName === nmss[1] || member.user.username === nmss[1]){
+              if(mbm.includes("✮")){
+                  mbm = mbm.replace("✮", "");
+              }
+              else{
+               mbm = nmss[1]   
+              }
+              
+              if(member.displayName === mbm || member.user.username === mbm){
                  
                  if (nmss[0] === "[A]"){
                      if (member.roles.find(x => x.name === 'Aventurier')){
