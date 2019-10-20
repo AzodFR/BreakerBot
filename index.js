@@ -20,19 +20,19 @@ bot.on('message', function(message){
               
               if(mbm.includes("[")){
                     
-                    mbm = nmss[2]   
+                    mbma = nmss[2]   
               }
               
               else if(mbm.includes("✮")){
                  
-                  mbm.replace("✮", "");
+                  mbma = mbm.replace("✮", "");
               }
               else{
-               mbm = nmss[1]   
+               mbma = nmss[1]   
               }
               
-              if(member.displayName === mbm || member.user.username === mbm){
-                 console.log(mbm);
+              if(member.displayName === mbma || member.user.username === mbma){
+                 console.log(mbma);
                  if (nmss[0] === "[A]"){
                      if (member.roles.find(x => x.name === 'Aventurier')){
                          console.log(nmss[1] +" est déjà Aventurier sur discord");
