@@ -27,7 +27,7 @@ bot.on('message', function(message){
               
           list.members.forEach(member => {
               if(mbma.includes("✮")){
-                 
+                 mbprem = mbma
                  mbma.replace("✮", "");
               }
               
@@ -128,6 +128,17 @@ bot.on('message', function(message){
                          let role = message.guild.roles.find(x => x.name === 'Fantôme')
                          member.addRole(role);
                          console.log(mbma +" est passé Fantôme sur discord");
+                     }
+                 }
+                  else if (mbprem.includes("✮")){
+                       if (member.roles.find(x => x.name === 'Premium')){
+                         console.log(mbma +" est déjà Premium sur discord");
+                     }
+                     
+                     else{
+                         let role = message.guild.roles.find(x => x.name === 'Premium')
+                         member.addRole(role);
+                         console.log(mbma +" est passé Premium sur discord");
                      }
                  }
               
