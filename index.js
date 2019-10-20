@@ -130,7 +130,7 @@ bot.on('message', function(message){
                          console.log(mbma +" est passé Fantôme sur discord");
                      }
                  }
-                 if (mbprem.includes("✮")){
+                else if (mbprem.includes("✮")){
                        if (member.roles.find(x => x.name === 'Premium')){
                          console.log(mbma +" est déjà Premium sur discord");
                      }
