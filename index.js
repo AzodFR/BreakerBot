@@ -39,24 +39,80 @@ bot.on('message', function(message){
                          console.log(nmss[1] +" est passé Survivant sur discord");
                      }
                  }
-                 else if (nmss[0] === "[C]"){
-                       if (member.roles.find(x => x.name === 'Chevalier')){
-                         console.log(nmss[1] +" est déjà Chevalier sur discord");
+                 else if (nmss[0] === "[B]"){
+                       if (member.roles.find(x => x.name === 'Baron')){
+                         console.log(nmss[1] +" est déjà Baron sur discord");
                      }
                      else{
-                         let role = message.guild.roles.find(x => x.name === 'Chevalier')
+                         let role = message.guild.roles.find(x => x.name === 'Baron')
                          member.addRole(role);
-                         console.log(nmss[1] +" est passé Chevalier sur discord");
+                         console.log(nmss[1] +" est passé Baron sur discord");
                      }
                  }
                  else if (nmss[0] === "[D]"){
                        if (member.roles.find(x => x.name === 'Duc')){
                          console.log(nmss[1] +" est déjà Duc sur discord");
                      }
+                     
                      else{
                          let role = message.guild.roles.find(x => x.name === 'Duc')
                          member.addRole(role);
                          console.log(nmss[1] +" est passé Duc sur discord");
+                     }
+                 }
+                 else if (nmss[0] === "[M]"){
+                       if (member.roles.find(x => x.name === 'Marquis')){
+                         console.log(nmss[1] +" est déjà Marquis sur discord");
+                     }
+                     
+                     else{
+                         let role = message.guild.roles.find(x => x.name === 'Marquis')
+                         member.addRole(role);
+                         console.log(nmss[1] +" est passé Marquis sur discord");
+                     }
+                 }
+                  else if (nmss[0] === "[C]"){
+                       if (member.roles.find(x => x.name === 'Comte')){
+                         console.log(nmss[1] +" est déjà Comte sur discord");
+                     }
+                     
+                     else{
+                         let role = message.guild.roles.find(x => x.name === 'Comte')
+                         member.addRole(role);
+                         console.log(nmss[1] +" est passé Comte sur discord");
+                     }
+                 }
+                  else if (nmss[0] === "[H]"){
+                       if (member.roles.find(x => x.name === 'Héro')){
+                         console.log(nmss[1] +" est déjà Héro sur discord");
+                     }
+                     
+                     else{
+                         let role = message.guild.roles.find(x => x.name === 'Héro')
+                         member.addRole(role);
+                         console.log(nmss[1] +" est passé Héro sur discord");
+                     }
+                 }
+                  else if (nmss[0] === "[L]"){
+                       if (member.roles.find(x => x.name === 'Légende')){
+                         console.log(nmss[1] +" est déjà Légende sur discord");
+                     }
+                     
+                     else{
+                         let role = message.guild.roles.find(x => x.name === 'Légende')
+                         member.addRole(role);
+                         console.log(nmss[1] +" est passé Légende sur discord");
+                     }
+                 }
+                  else if (nmss[0] === "[F]"){
+                       if (member.roles.find(x => x.name === 'Fantôme')){
+                         console.log(nmss[1] +" est déjà Fantôme sur discord");
+                     }
+                     
+                     else{
+                         let role = message.guild.roles.find(x => x.name === 'Fantôme')
+                         member.addRole(role);
+                         console.log(nmss[1] +" est passé Fantôme sur discord");
                      }
                  }
               
