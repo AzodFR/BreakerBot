@@ -76,7 +76,7 @@ bot.on('message', function(message){
         message.react("👍");
         
         }
-     else if (message.channel.id === "629054688851001384" && message.content === ".djoff" && message.author.displayname === "AzodFR"){
+     else if (message.channel.id === "629054688851001384" && message.content === ".djoff"){
         message.channel.send("!settings djonly off");
 
         }
