@@ -47,13 +47,13 @@ bot.on('message', function(message){
                      }
                  }
                  else if (nmss[0] === "[S]"){
-                       if (member.roles.find(x => x.name === 'Survivant')){
-                         console.log(mbma +" est déjà Survivant sur discord");
+                       if (member.roles.find(x => x.name === 'Joueur')){
+                         console.log(mbma +" est déjà Joueur sur discord");
                      }
                      else{
-                         let role = message.guild.roles.find(x => x.name === 'Survivant')
+                         let role = message.guild.roles.find(x => x.name === 'Joueur')
                          member.addRole(role);
-                         console.log(mbma +" est passé Survivant sur discord");
+                         console.log(mbma +" est passé Joueur sur discord");
                      }
                  }
                  else if (nmss[0] === "[B]"){
