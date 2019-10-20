@@ -15,7 +15,7 @@ bot.on('message', function(message){
           nmss = nms.split(" ");
          /// console.log(nmss[0]); 
          /// console.log(nmss[1]); 
-          mbma = nmss[1]
+          
           if(nmss[1].includes("[")){
                     
                     mbma = nmss[2]   
