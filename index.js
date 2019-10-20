@@ -18,11 +18,13 @@ bot.on('message', function(message){
         
           if(nmss[1].includes("[")){
                     
-                    mbma = nmss[2]   
+                    mbma = nmss[2] 
+                    mbprem = mbma
               }
               
               else{
-                mbma = nmss[1]   
+                mbma = nmss[1] 
+                mbprem = mbma
               }
               
           list.members.forEach(member => {
@@ -130,7 +132,7 @@ bot.on('message', function(message){
                          console.log(mbma +" est passé Fantôme sur discord");
                      }
                  }
-                else if (mbprem.includes("✮")){
+                if (mbprem.includes("✮")){
                        if (member.roles.find(x => x.name === 'Premium')){
                          console.log(mbma +" est déjà Premium sur discord");
                      }
