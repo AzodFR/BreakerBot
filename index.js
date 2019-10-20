@@ -28,8 +28,10 @@ bot.on('message', function(message){
               }
               
           list.members.forEach(member => {
+              
               if(mbma.includes("✮")){
                  mbma.replace("✮", "");
+                  console.log(mbma + " est premium");
                  if(member.displayName === mbma || member.user.username === mbma){
                      if(member.roles.find(x => x.name === 'Premium')){
                          console.log(mbma +" est déjà Premium sur discord");
