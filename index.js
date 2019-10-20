@@ -19,11 +19,11 @@ bot.on('message', function(message){
               mbm = nmss[1]
               
               if(mbm.includes("Modo") || mbm.includes("Guide") || mbm.includes("Archi") || mbm.includes("Scribe")){
-                    console.log(nmss+" > double grades");
+                    
                     mbm = nmss[2]   
               }
               else if(mbm.includes("✮")){
-                  console.log(mbm+" > premium");
+                 
                   mbm.replace("✮", "");
               }
               else{
@@ -31,7 +31,7 @@ bot.on('message', function(message){
               }
               
               if(member.displayName === mbm || member.user.username === mbm){
-                 
+                 console.log(mbm);
                  if (nmss[0] === "[A]"){
                      if (member.roles.find(x => x.name === 'Aventurier')){
                          console.log(nmss[1] +" est déjà Aventurier sur discord");
