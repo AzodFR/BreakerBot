@@ -19,9 +19,11 @@ bot.on('message', function(message){
               mbm = nmss[1]
               
               if(mbm.includes("Modo") || mbm.includes("Guide") || mbm.includes("Archi") || mbm.includes("Scribe")){
+                    console.log(nmss+" > double grades");
                     mbm = nmss[2]   
               }
               else if(mbm.includes("✮")){
+                  console.log(mbm+" > premium");
                   mbm.replace("✮", "");
               }
               else{
