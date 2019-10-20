@@ -16,13 +16,13 @@ bot.on('message', function(message){
          /// console.log(nmss[0]); 
          /// console.log(nmss[1]); 
           mbm = nmss[1]
-          if(mbm.includes("[")){
+          if(nmss[1].includes("[")){
                     
-                    mbma = nmss[2]   
+                   let mbma = nmss[2]   
               }
               
               else{
-               mbma = nmss[1]   
+               let mbma = nmss[1]   
               }
               
           list.members.forEach(member => {
