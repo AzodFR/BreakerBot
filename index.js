@@ -17,7 +17,7 @@ bot.on('message', function(message){
          /// console.log(nmss[1]); 
           list.members.forEach(member => {
               mbm = nmss[1]
-              console.log(mbm + " >> test");
+              
               if(mbm.includes("Modo") || mbm.includes("Guide") || mbm.includes("Archi") || mbm.includes("Scribe")){
                     mbm = nmss[2]   
               }
