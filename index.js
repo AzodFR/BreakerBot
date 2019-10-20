@@ -18,7 +18,10 @@ bot.on('message', function(message){
           list.members.forEach(member => {
               mbm = nmss[1]
               console.log(mbm + " >> test");
-              if(mbm.includes("✮")){
+              if(mbm.includes("Modo") || mbm.includes("Guide") || mbm.includes("Archi") || mbm.includes("Scribe")){
+                    mbm = nmss[2]   
+              }
+              else if(mbm.includes("✮")){
                   mbm.replace("✮", "");
               }
               else{
