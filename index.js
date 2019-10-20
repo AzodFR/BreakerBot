@@ -28,7 +28,7 @@ bot.on('message', function(message){
           list.members.forEach(member => {
               if(mbma.includes("✮")){
                  
-                  mbma = mbm.replace("✮", "");
+                 mbma.replace("✮", "");
               }
               
               
