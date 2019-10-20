@@ -17,8 +17,9 @@ bot.on('message', function(message){
          /// console.log(nmss[1]); 
           list.members.forEach(member => {
               mbm = nmss[1]
+              console.log(mbm + " >> test");
               if(mbm.includes("✮")){
-                  mbm = mbm.replace("✮", "");
+                  mbm.replace("✮", "");
               }
               else{
                mbm = nmss[1]   
