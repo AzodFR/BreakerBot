@@ -14,7 +14,7 @@ bot.on('message', function(message){
           nms = embed.author.name
           nmss = nms.split(" ");
          /// console.log(nmss[0]); 
-         console.log(nmss[1]); 
+         /// console.log(nmss[1]); 
         
           if(nmss[1].includes("[")){
                     
