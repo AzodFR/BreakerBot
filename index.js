@@ -156,40 +156,7 @@ bot.on('message', function(message){
     
 
         } 
-    else if (message.channel.id === "619577505606664193"){
-        
-         message.embeds.forEach((embed) => {
-          nms = embed.author.name
-          nmss = nms.split(" ");
-         /// console.log(nmss[0]); 
-         /// console.log(nmss[1]); 
-          if(nmss[1].includes("[")){
-                    
-                    mbma = nmss[2] 
-                    
-            }
-              
-        else{
-                mbma = nmss[1] 
-                
-              }
-        
-          if(mbma.includes("✮")){
-              
-          list.members.forEach(member => {
-              
-                 if(member.displayName === mbma || member.user.username === mbma){
-                     if(member.roles.find(x => x.name === 'Premium')){
-                         console.log(mbma +" est déjà Premium sur discord");
-                     }
-                     else{
-                         let role = message.guild.roles.find(x => x.name === 'Premium')
-                         member.addRole(role);
-                         console.log(mbma +" est passé Premiuum sur discord");
-                     }
-                 }
-            }
-       }
+    
     else if (message.channel.id === "613684354421620766"){
         message.react("👎");
         message.react("👍");
