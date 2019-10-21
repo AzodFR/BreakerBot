@@ -188,7 +188,6 @@ bot.on('message', function(message){
                          console.log(mbma +" est passé Premiuum sur discord");
                      }
                  }
-              }
             }
        }
     else if (message.channel.id === "613684354421620766"){
