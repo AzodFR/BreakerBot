@@ -7,7 +7,8 @@ bot.on('ready', function(){
 })
 
 bot.on('message', function(message){
-    const list = bot.guilds.get("596754524392259584"); 
+    const list = bot.guilds.get("596754524392259584");
+    const filter = (reaction, user) => ["👍"].includes(reaction.emoji.name);
     if (message.channel.id === "619577505606664193"){
         
          message.embeds.forEach((embed) => {
@@ -162,12 +163,20 @@ bot.on('message', function(message){
         message.react("👍");
         
         }
-     else if (message.channel.id === "629054688851001384" && message.content === ".djoff"){
-        message.channel.send("!settings djonly off");
-
-        }
+   
 
         })
+
+
+    bot.on('messageReactionAdd', (reaction, user) => {
+    if(reaction.emoji.name === "👍") {
+        if(message.id === "639055492206952469"){
+            let role = message.guild.roles.find(x => x.name === 'approved')
+            reaction.users.addRole(role);
+            console.log(reaction.users);
+        }
+    }
+});
 
 
 
