@@ -170,7 +170,7 @@ bot.on('message', function(message){
 
     bot.on('messageReactionAdd', (reaction, user) => {
     if(reaction.emoji.name === "👍") {
-        if(message.id === "639055492206952469"){
+        if(reaction.message.id === "639055492206952469"){
             let role = message.guild.roles.find(x => x.name === 'approved')
             reaction.users.addRole(role);
             console.log(reaction.users);
