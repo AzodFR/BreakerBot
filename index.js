@@ -184,12 +184,12 @@ bot.on('message', function(message){
     else if (message.content === "/help"){
         var embed = new Discord.RichEmbed()
             .setTitle("Liste de commandes")
-            .addField(":desktop: Pour avoir accès au site → /site")
-            .addField(":information_source: Pour avoir accès au wiki → /wiki")
-            .addField(":mouse_three_button: Pour allez voter → /vote")
-            .addField(":moneybag: Pour avoir accès à la boutique → /boutique")
-            .addField(":earth_americas: Pour avoir accès à la dynmap → /dynmap")
-            .addField(":joystick: Pour obtenir l'ip du serveur → /ip (avec un espace après ip)")
+            .addField("",":desktop: Pour avoir accès au site → /site")
+            .addField("",":information_source: Pour avoir accès au wiki → /wiki")
+            .addField("",":mouse_three_button: Pour allez voter → /vote")
+            .addField("",":moneybag: Pour avoir accès à la boutique → /boutique")
+            .addField("",":earth_americas: Pour avoir accès à la dynmap → /dynmap")
+            .addField("",":joystick: Pour obtenir l'ip du serveur → /ip (avec un espace après ip)")
             .setColor("0x2ecc71")
    
         message.channel.sendEmbed(embed)
