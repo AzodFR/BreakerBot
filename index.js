@@ -182,12 +182,17 @@ bot.on('message', function(message){
         message.channel.send(":moneybag: Boutique du serveur: https://breakerland.fr/shop")
     }
     else if (message.content === "/help"){
-        message.channel.send(":desktop: Pour avoir accès au site → /site")
-        message.channel.send(":information_source: Pour avoir accès au wiki → /wiki")
-        message.channel.send(":mouse_three_button: Pour allez voter → /vote")
-        message.channel.send(":moneybag: Pour avoir accès à la boutique → /boutique")
-        message.channel.send(":earth_americas: Pour avoir accès à la dynmap → /dynmap")
-        message.channel.send(":joystick: Pour obtenir l'ip du serveur → /ip (avec un espace après ip)")
+        var embed = new Discord.RichEmbed()
+            .setTitle("Liste de commandes")
+            .addField(":desktop: Pour avoir accès au site → /site")
+            .addField(":information_source: Pour avoir accès au wiki → /wiki")
+            .addField(":mouse_three_button: Pour allez voter → /vote")
+            .addField(":moneybag: Pour avoir accès à la boutique → /boutique")
+            .addField(":earth_americas: Pour avoir accès à la dynmap → /dynmap")
+            .addField(":joystick: Pour obtenir l'ip du serveur → /ip (avec un espace après ip)")
+            .setColor("0x2ecc71")
+   
+        message.channel.sendEmbed(embed)
     }
    
 
