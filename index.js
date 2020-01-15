@@ -163,6 +163,22 @@ bot.on('message', function(message){
         message.react("👍");
         
         }
+    else if (message.content === "/wiki"){
+        message.channel.send(":information_source: Lien du wiki: https://breakerland.fr/wiki")
+    }
+    else if (message.content === "/vote"){
+        message.channel.send(":information_source: Lien pour voter: https://breakerland.fr/vote")
+    }
+    else if (message.content === "/site"){
+        message.channel.send(":information_source: Lien du site: https://breakerland.fr/")
+    }
+    else if (message.content === "/dynmap"){
+        message.channel.send(":information_source: Lien de la dynmap: https://map.breakerland.fr/")
+    }
+    else if (message.content === "/ip"){
+        message.channel.send(":information_source: IP du serveur: breakerland.fr")
+    }
+
    
 
         })
