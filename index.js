@@ -186,7 +186,7 @@ bot.on('message', function(message){
             .setTitle("Liste de commandes")
             .addField(":desktop: Pour avoir accès au site","/site")
             .addField(":information_source: Pour avoir accès au wiki","/wiki")
-            .addField(":mouse_three_button: Pour allez voter","/vote")
+            .addField(":mouse_three_button: Pour aller voter","/vote")
             .addField(":moneybag: Pour avoir accès à la boutique","/boutique")
             .addField(":earth_americas: Pour avoir accès à la dynmap","/dynmap")
             .addField(":joystick: Pour obtenir l'ip du serveur","/ip (avec un espace après ip)")
