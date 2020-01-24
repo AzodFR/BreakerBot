@@ -190,7 +190,7 @@ bot.on('message', function(message){
             .addField(":moneybag: Pour avoir accès à la boutique","/boutique")
             .addField(":earth_americas: Pour avoir accès à la dynmap","/dynmap")
             .addField(":joystick: Pour obtenir l'ip du serveur","/ip")
-            .addField(":misenplace: Pour que Toryar tienne son serveur","/toryar")
+            .addField(":briefcase: Pour que Toryar tienne son serveur","/toryar")
             .setColor("0x2ecc71")
    
         message.channel.sendEmbed(embed)
