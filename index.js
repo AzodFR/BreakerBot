@@ -184,6 +184,7 @@ bot.on('message', function(message){
     else if (message.content === "/help"){
         var embed = new Discord.RichEmbed()
             .setTitle("Liste de commandes")
+            .addField(":question: Pour afficher cette liste","/help")
             .addField(":desktop: Pour avoir accès au site","/site")
             .addField(":information_source: Pour avoir accès au wiki","/wiki")
             .addField(":mouse_three_button: Pour aller voter","/vote")
