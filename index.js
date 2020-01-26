@@ -210,6 +210,7 @@ bot.on('message', function(message){
     }
 });
     bot.on("guildMemberAdd", (member) => {
+        const guild = member.guild;
         const defaultChannel = guild.channels.find(channel => channel.id === '644156102690209825');
         defaultChannel.send("Bienvenue <@"+member.id+"> !")
         defaultChannel.send("Pour avoir accès à tous le serveur merci de mettre un :thumbsup: sous le <#614482156001034270>")
