@@ -200,15 +200,6 @@ bot.on('message', function(message){
         })
 
 
-    bot.on('messageReactionAdd', (reaction, user) => {
-    if(reaction.emoji.name === "👍") {
-        if(reaction.message.id === "639055492206952469"){
-            let role = message.guild.roles.find(x => x.name === 'approved')
-            reaction.users.addRole(role);
-            console.log(reaction.users);
-        }
-    }
-});
     bot.on("guildMemberAdd", (member) => {
         const guild = member.guild;
         const defaultChannel = guild.channels.find(channel => channel.id === '644156102690209825');
