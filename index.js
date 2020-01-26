@@ -193,7 +193,7 @@ bot.on('message', function(message){
             .addField(":briefcase: Pour que Toryar tienne son serveur","/toryar")
             .setColor("0x2ecc71")
    
-        message.channel.sendEmbed(embed)
+        message.channel.send(embed)
     }
    
 
@@ -209,6 +209,11 @@ bot.on('message', function(message){
         }
     }
 });
+    bot.on("guildMemberAdd", (member) => {
+        const defaultChannel = guild.channels.find(channel => channel.id === '644156102690209825');
+        defaultChannel.send("Bienvenue <@"+member.id+"> !")
+        defaultChannel.send("Pour avoir accès à tous le serveur merci de mettre un :thumbsup: sous le <#614482156001034270>")
+    });
 
 
 
