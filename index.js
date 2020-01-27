@@ -208,6 +208,8 @@ bot.on('message', function(message){
         defaultChannel.send("Pour avoir accès à tous le serveur merci de mettre un :thumbsup: sous le <#614482156001034270>")
     });
 
+    
+
 
 
 bot.login(process.env.BOT_TOKEN)
