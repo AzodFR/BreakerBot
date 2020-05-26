@@ -207,15 +207,11 @@ bot.on('message', function(message){
         }
         let p1 = message.author;
         let p2 = message.mentions.users.first();
-        if(length(message.mentions.roles) > 0){
+        if(p2 === undefined){
             message.delete();
             return message.reply('merci de sélectionner un utilisateur précis !')
         }
-        else if(length(message.mentions.channels) > 0){
-            message.delete();
-            return message.reply('merci de sélectionner un utilisateur précis !')
-        }
-        if(p1 === p2){
+        else if(p1 === p2){
             message.delete();
             return message.reply("t'es bête ou quoi")
         }
@@ -271,8 +267,6 @@ bot.on('message', function(message){
             }
         }
     }, 60000);
-
-
 
 
 bot.login($BOT_TOKEN)
