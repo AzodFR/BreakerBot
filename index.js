@@ -16,6 +16,9 @@ const fs = require("fs");
 bot.msgs = require("./ideas.json");
 bot.polls =require("./polls.json");
 
+const ffmpeg = require("ffmpeg");
+const opus = require("opusscript");
+const ytdl = require("ytdl-core");
 
 bot.on('message', function(message){
     const list = bot.guilds.get("596754524392259584");
@@ -225,6 +228,47 @@ bot.on('message', function(message){
         }
         else{
             return message.channel.send("Égalité parfaite ! :pensive:");
+        }
+    }
+    else if(message.content === "/chris1"){
+        let voiceChannel = message.member.voiceChannel;
+        if(!voiceChannel){
+            return message.reply("vous devez être dans un salon vocal !");
+        }
+        else{
+            voiceChannel.join().then(function (connection) {
+            connection.playFile('./Morceau_One.mp3')
+            })
+        }
+        
+    }
+    else if(message.content === "/chris2"){
+        let voiceChannel = message.member.voiceChannel;
+        if(!voiceChannel){
+            return message.reply("vous devez être dans un salon vocal !");
+        }
+        else{
+            voiceChannel.join().then(function (connection) {
+            connection.playFile('./Morceau_Two.mp3')
+            })
+        }
+        
+    }
+    else if(message.content.startsWith('/play') || message.content.startsWith('/p ')){
+        if(message.content.startsWith('/play')){
+          var url = message.content.slice(6);  
+        }
+        else if(message.content.startsWith('/p ')){
+            var url = message.content.slice(3); 
+        }
+        let voiceChannel = message.member.voiceChannel;
+        if(!voiceChannel){
+            return message.reply("vous devez être dans un salon vocal !");
+        }
+        else{
+            voiceChannel.join().then(function (connection) {
+            connection.playStream(ytdl(url, {filter: "audioonly"}));
+            })
         }
     }
    
