@@ -313,4 +313,6 @@ bot.on('message', function(message){
     }, 60000);
 
 
-bot.login($BOT_TOKEN)
+
+
+bot.login(TOKEN)
